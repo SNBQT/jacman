@@ -38,8 +38,10 @@ body
 
 #textlogo
   float left
-  width 75%
+  width 90%
   margin-left 0.5em
+  @media tablet
+    width 40%
   h1.site-name
     width 86%
     if ShowCustomFont
@@ -93,10 +95,9 @@ header nav
   @media tablet
     float right
     width auto
-    margin-top 1em
     max-height none
+    padding-top: 3em;
   font-size font-size+12.5
-  padding-top 0.5em
   max-height 0.01em
   transition max-height 1s ease-out
   ul
@@ -115,6 +116,7 @@ header nav
 
 .shownav
   max-height 40em
+  padding-top 0.5em
 
 .search
   padding 0.1em 0 0 1em
